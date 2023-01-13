@@ -50,32 +50,11 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "hello@tejasrj.io"
-#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-#  facebook: deanattali
   github: tejas-j
   twitter: TJammihal
-#  patreon: DeanAttali
-#  youtube: c/daattali
-#  medium: yourname
-#  reddit: yourname
   linkedin: tejas-jammihal
-#  xing: yourname
-#  stackoverflow: "3943160/daattali"
-#  snapchat: deanat78
-#  instagram: deanat78
-#  spotify: yourname
-#  telephone: +14159998888
-#  steam: deanat78
-#  twitch: yourname
-#  yelp: yourname
-#  telegram: yourname
-#  calendly: yourname
-#  mastodon: instance.url/@username
   ORCID: 0000-0003-4614-1266
   google-scholar: "citations?user=izr9eV4AAAAJ&hl=en&oi=ao"
-#  discord: invite/invite_code or users/userid 
-#  kaggle: yourname
-#  hackerrank: yourname
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
@@ -117,7 +96,7 @@ edit_page_button: false
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
-#keywords: "my,list,of,keywords"
+keywords: "tejas,jammihal,immunotherapy,cancer,biology,computational biology,bioinformatics,research"
 
 ######################################
 # --- Colours / background image --- #
@@ -169,7 +148,7 @@ footer-hover-col: "#0085A1"
 #cloudflare_analytics: ""
 
 # Google Tag Manager ID
-#gtm: "G-E7KEP89ZTD"
+#gtm: ""
 
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
