@@ -6,94 +6,58 @@ subtitle:
 
 # Tejas R. Jammihal
 
-## Education
-- Master of Biotechnology, The Pennsylvania State University, University Park, PA (2018 – 2020)
-- Master & Bachelor of Technology in Biological Engineering, Indian Institute of Technology Madras, Chennai, India (2012 – 2017)
-  - Minor in Nanotechnology
+## TECHNICAL PROFICIENCY
+Highly proficient in bioinformatics analysis of WGS and RNA-seq data, including variant calling, CNV analysis, and differential expression. Experienced in developing and implementing pipelines using WDL, Snakemake, Docker, and Singularity on cloud platforms (AWS, GCP). Strong programming skills in R, Python, and Bash.
 
-## Research & Work Experience
+## EDUCATION
+- The Pennsylvania State University, University Park, PA 2018 - 2020
+  - Master of Biotechnology
+- Indian Institute of Technology Madras, Chennai, India 2012 - 2017
+  - Master & Bachelor of Technology in Biological Engineering
 
-### Research Investigator, MD Anderson Cancer Center, Houston, TX (Jan 2022 – Present)
-#### Advisor: Sachet Shukla, Ph.D
-- Designing, developing, and validating bespoke pipelines to quantify the expression of human endogenous retroviruses from short reads transcriptomic data
-- Discovered correlates of survival and novel antigenic targets by applying the pipeline on in-vitro and clinical lymphoma datasets
-- Developing analysis methods for leading 3rd generation long-read sequencing platforms and performing technical validation to benchmark their performance for isoform characterization, structural variation detection and antigen discovery applications
-- Writing, analyzing data, and generating figures for grant applications and manuscripts
-
-### Bioinformatics Analyst, Dana-Farber Cancer Institute, Boston, MA (Sep 2020 – Jan 2022)
-#### Advisors: Toni Choueiri, MD, David A. Braun, MD, PhD
-- Elucidated the role of clonal neoantigens and tertiary lymphoid structures as prognostic biomarkers of exceptional response to immune checkpoint blockade therapy in clear cell renal cell carcinoma (ccRCC)
-- Identified that a mutational signature corresponding to defective repair of DNA damage by homologous recombination was enriched in triple negative breast cancer patients with both poorer overall survival and primary resistance
-- Implemented bioinformatics pipelines and statistical tools based on published literature and packaged them as containers to be used for analysis on the cloud
-- Analyzed whole exome sequencing and RNA sequencing data of 2000+ patients from clinical cohorts of ccRCC patients treated with immune checkpoint inhibitors and publicly available datasets of cancer like TCGA, PCAWG, etc
-
-### Computational Biologist, Novartis Institute of Biomedical Research, Cambridge, MA (Jun 2019 – Sep 2020)
-#### Advisor: Melody Morris, PhD
-- Identified transcriptomic signatures of physiological response to cigarette smoke in pre-clinical models of smoking, by analyzing gene expression profiling datasets
-- Collaborated with scientists involved in translational research and drug discovery to gain mechanistic insights of the underlying biological mechanisms in the disease models
-- Created interactive dashboard to visualize the results from computational analysis
-- Assessed the activity of discovered signatures in human disease data to inform expansion opportunities of existing drugs
-
-### Graduate Researcher, Indian Institute of Technology Madras, Chennai, India
-#### Advisor: A. Jayakrishnan, Ph.D                                                                           Jul 2016 – Jun 2017
-Topic: Block Copolymer Micelles for Amphotericin B Delivery
-- Created a shelf stable micellar formulation of Amphotericin B, demonstrated improved aqueous solubility, sustained drug release and lowered toxicity profile
-
-### Summer Intern, Xcode Life, Chennai, India                                                    May 2015 – July 2015
-- Reviewed scientific literature to validate genes associated with metabolism and antioxidant activity of micronutrients, for product development and customer information
-
-### Summer Intern, Tata Memorial Hospital, Mumbai, India                               May 2014 – July 2014
-- Studied the effect of gamma irradiation on epithelial cells by metabolic labelling followed by protein expression to investigate how Mycobacterium tuberculosis infect epithelial cells
+## KEY SKILLS
+WGS, RNA-seq, Variant Calling (GATK, Mutect2, DRAGEN), CNV Analysis, Pipeline Development (WDL, Snakemake), Cloud Computing (AWS, GCP), R, Python, Bash
 
 ## PUBLICATIONS
-- Barroso-Sousa, R., Forman, J., Collier, K., Weber, Z. T., **Jammihal, T. R.,** Kao, K. Z., ... & Tolaney, S. M. (2022). Multidimensional Molecular Profiling of Metastatic Triple-Negative Breast Cancer and Immune Checkpoint Inhibitor Benefit. JCO precision oncology, 6, e2100413.
+### Peer-Reviewed Articles
+- Barroso-Sousa, R., Forman, J., Collier, K., Weber, Z. T., Jammihal, T. R., Kao, K. Z., ... & Tolaney, S. M. (2022). Multidimensional molecular profiling of metastatic triple-negative breast cancer and immune checkpoint inhibitor benefit. JCO Precision Oncology, 6, e2100413.
+- Saliby, R. M., Labaki, C., Jammihal, T. R., Xie, W., Sun, M., Shah, V., ... & Choueiri, T. K. (2024). Impact of renal cell carcinoma molecular subtypes on immunotherapy and targeted therapy outcomes. Cancer cell, 42(5), 732-735.
+- Jammihal, T., Saliby, R. M., Labaki, C., Soulati, H., Gallegos, J., Peris, A., ... & Shukla, S. A. (2025). Immunogenomic determinants of exceptional response to immune checkpoint inhibition in renal cell carcinoma. Nature Cancer, 6(2), 372-384.
+- Laimon, Y., Paul, M., Jammihal, T., Ghandour, F., El Ahmar, N., Simsek, B., ... & Choueiri, T. K. (2025). 831 AXL Receptor Tyrosine Kinase Expression in Metastatic Renal Cell Carcinoma: Insights from the METEOR trial. Laboratory Investigation, 105(3).
+- Kilich, G., Maurer, K., Jadhav, T., Jammihal, T., Schindewolf, E., Conlin, L., ... & Hartung, H. (2025). P398: An unusual cause of hexokinase 1 deficiency. Genetics in Medicine Open, 3.
+- Kilich, G., Schindewolf, E., Maurer, K., Jadhav, T., Jammihal, T., Behrens, E., ... & Skraban, C. (2025). VPS45 Deficiency with Features of Hemophagocytic Lymphohistiocytosis and Progressive Neurologic Involvement. Journal of Human Immunity, 1(CIS2025), CIS2025abstract-145.
+- Kilich, G., Schindewolf, E., Lairson, L., Maurer, K., Jadhav, T., Jammihal, T., ... & Skraban, C. (2025). Immunodeficiency in Mitochondrial DNA Depletion Syndrome 20: A New Phenotypic Insight into LIG3 Mutations. Journal of Human Immunity, 1(CIS2025), CIS2025abstract-147.
 
-## PRESENTATIONS & POSTERS
-- **_Jammihal, T. R._**, Saliby, R. M., Labaki, C., McGregor, B., Zarif, T. E., Braun, D., . . . Shukla, S.A. Clonal neoantigen load and tertiary lymphoid structure formation are associated with exceptional response to immune checkpoint inhibition in clear cell renal cell carcinoma. 
-  - Selected oral abstract presentation Kidney Cancer Research Summit, Philadelphia, PA (Oct 2022)
-  - Research Town Hall, MD Anderson Cancer Center, Houston, TX (Oct 2022)
-  - New England GU Oncology Young Investigator Forum (Nov 2022)
-- Saliby, R. M.*, **Jammihal, T. R.***, Labaki, C., Xie, W., Zarif, T. E., Motzer, R., . . .  Braun, D .  Are the IMmotion151-molecular signatures predictive of treatment outcomes in the JAVELIN Renal 101 trial? Peer reviewed presentation at Kidney Cancer Research Summit, Philadelphia, PA (Oct 2022)
-- Saliby, R. M.*, **Jammihal, T.***, Labaki, C., Xie, W., Motzer, R. J., Powles, T., … Choueiri, T. K. (2022). Cross-trial validation of molecular subtypes in patients with metastatic clear cell renal cell carcinoma (RCC): The JAVELIN Renal 101 experience. Journal of Clinical Oncology, 40(16_suppl), 4531–4531. doi:10.1200/JCO.2022.40.16_suppl.4531
+### Conference Abstracts
+- Saliby, R. M., Jammihal, T., Labaki, C., Soulati, H., Gallegos, J., Peris, A., ... & Shukla, S. A. (2023). 1891P Determinants of exceptional response to immune checkpoint inhibition in metastatic clear cell renal cell carcinoma. Annals of Oncology, 34, S1017.
+- Saliby, R. M., Jammihal, T., Labaki, C., Xie, W., Motzer, R. J., Powles, T., ... & Choueiri, T. K. (2022). Cross-trial validation of molecular subtypes in patients with metastatic clear cell renal cell carcinoma (RCC): The JAVELIN Renal 101 experience. American Society of Clinical Oncology.
+- Saliby, R. M., Labaki, C., Jammihal, T., Soulati, H., Gallegos, J., Peris, A., ... & El Zarif, T. (2025). Metabolic determinants of exceptional response to immune checkpoint inhibition in renal cell carcinoma. American Society of Clinical Oncology.
 
-\* co-first authorship
+## WORK EXPERIENCE
+### Children’s Hospital of Philadelphia Philadelphia, PA
+Bioinformatics Scientist II Jun ‘23 – Present
+- Performed WGS data analysis using DRAGEN, Manta, CNVPytor, etc., from raw data QC to variant annotation and filtering, delivering results for clinical review and interpretation.
+- Collaborated with genetic counselors, clinical geneticists, and researchers to discuss genomic findings, contributing a bioinformatics perspective to case reviews.
+- Worked with clinical and other informatics teams at CHOP to enhance data handling and processing pipelines, providing feedback and suggestions that improved UDN project efficiency and turnaround time.
+- Adhered to established standard operating procedures (SOPs) for WGS data analysis and interpretation, ensuring consistency and quality within the UDN project.
 
-## TEACHING & MENTORING EXPERIENCE
+### MD Anderson Cancer Center Houston, TX
+Associate Data Scientist Jan ‘22 – Jun ‘23
+- Designing, developing, and validating bespoke pipelines to determine the expression of human endogenous retroviruses from short and long reads transcriptomic data.
+- Analyzing data from patient-derived xenograft models to discover correlates of survival and validating these results in clinical cohorts of lymphoma.
+- Developing computational methods for long-read sequencing data and performing technical validation to benchmark their performance for antigen discovery applications.
+- Writing, analyzing data, and generating figures for grant applications and manuscripts.
 
-- Peer Mentor, MD Anderson Cancer Center, Houston, TX
-  - Familiarized new hires with technical and biological knowhow pertaining to immunogenomics and neoantigen prediction. Guided them through data analysis and interpretation of results	2022 – Present
-- Teaching Assistant, IITM, Chennai, India
-  - Courses: Biomolecular Analysis Lab, Biomaterials Lab
-  - Demonstrated and assisted in laboratory experiments, graded lab reports, and administered exams for 45 students. 	2016 – 2017
-- Volunteer, National Service Scheme, Chennai, India
-  - Mentored and tutored high-school blind students at a government school. Created audio material library for to their STEM coursework.	2012 – 2013
+### Dana-Farber Cancer Institute Boston, MA
+Bioinformatics Analyst Sep ‘20 – Jan ‘22
+- Elucidated the role of clonal neoantigens and tertiary lymphoid structures as prognostic biomarkers of exceptional response to immune checkpoint blockade therapy in clear cell renal cell carcinoma (ccRCC), through integrative analysis of WES and RNA-seq data.
+- Identified the mutational signature corresponding to defective repair of DNA damage by homologous recombination, enriched in triple-negative breast cancer patients with poorer overall survival and primary resistance.
+- Implemented bioinformatics pipelines and statistical tools based on published literature, packaged them as containers, and used them for cloud analysis.
+- Analyzed whole exome sequencing and RNA sequencing data of 2000+ patients from clinical cohorts of ccRCC treated with immune checkpoint inhibitors and publicly available datasets of cancer.
 
-## FELLOWSHIPS & AWARDS
-
-- Awarded teaching assistantship by the Ministry of Human Resource Development, Government of India to cover 50% of tuition 	2016 – 2017
-- Achieved all India rank of 113 (99.74 percentile) in the Graduate Aptitude Test in Engineering 	2016
-- Cleared the Indian Institute of Technology (IIT) Joint Entrance examination, placed in the top 1% and selected to attend IIT Madras, Chennai	2012
-- Among the top 300 students selected across India to appear for the Indian National Astronomy Olympiad 	2009 & 2008
-- Awarded the silver medal (top 0.05%) in the Dr. Homi Bhabha Young Scientist competition 	2008 & 2005
-
-## SKILLS
-
-### Data Types
-- RNA-seq: short reads, long reads, single cell, spatial transcriptomics
-- DNA-seq: Whole Exome Sequencing (WES)
-- Other: gene expression microarray, ATAC-seq
-
-### Computational Analyses
-- Somatic mutation and copy number calling, purity and ploidy estimation, clonal and phylogenetic reconstruction, mutational signature analysis, immunogenomics, neoantigen prediction, differential expression, survival analysis, unsupervised clustering, random forest classification
-
-### Programming Languages
-- R, Python, bash
-
-### Reproducible research
-- WDL, Snakemake, Nextflow, conda, Docker, Singularity
-
-### HPC platforms
-- LSF, Google Cloud, Amazon Web Services
-
-### Repositories & Databases
-- TCGA, GEO, SRA, EGA, dbGaP
+### Novartis Institute of Biomedical Research Cambridge, MA
+Computational Biology co-op Jun ‘19 – Sep ‘20
+- Identified transcriptomic signatures of physiological response to cigarette smoke in preclinical models of smoking by analyzing gene expression profiling datasets.
+- Collaborated with translational research and drug discovery scientists to gain mechanistic insights into the underlying biological mechanisms in the disease models.
+- Created an interactive dashboard using Spotfire to visualize the results from computational analysis.
+- Assessed the activity of discovered signatures in human disease data to inform expansion opportunities of existing drugs.
