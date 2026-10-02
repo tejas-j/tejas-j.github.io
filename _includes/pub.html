@@ -1,0 +1,24 @@
+{%- comment -%}
+Renders one publication entry. Usage: {% include pub.html p=item %}
+Bolds the author's own name; links the title to the DOI when present.
+{%- endcomment -%}
+{%- assign authors = include.p.authors | replace: "Jammihal TR*", "<strong>Jammihal TR</strong>*" | replace: "Jammihal T*", "<strong>Jammihal T</strong>*" | replace: "Jammihal TR", "<strong>Jammihal TR</strong>" | replace: "Jammihal T,", "<strong>Jammihal T</strong>," -%}
+<li class="pub">
+  <span class="pub-title">
+    {%- if include.p.doi -%}
+      <a href="https://doi.org/{{ include.p.doi }}">{{ include.p.title }}</a>
+    {%- else -%}
+      {{ include.p.title }}
+    {%- endif -%}
+  </span>
+  <span class="pub-authors">{{ authors }}</span>
+  <span class="pub-venue"><em>{{ include.p.venue }}</em>{% if include.p.detail %} {{ include.p.detail }}{% endif %} ({{ include.p.year }})
+    {%- if include.p.doi %} · <a class="doi" href="https://doi.org/{{ include.p.doi }}">doi:{{ include.p.doi }}</a>{% endif -%}
+  </span>
+  {%- if include.p.tag or include.p.cofirst %}
+  <span class="pub-tags">
+    {%- if include.p.cofirst %}<span class="tag">Co-first author</span>{% endif -%}
+    {%- if include.p.tag %}<span class="tag tag-accent">{{ include.p.tag }}</span>{% endif -%}
+  </span>
+  {%- endif %}
+</li>

@@ -1,15 +1,97 @@
 ---
-layout: page
-title: About Me
-subtitle:
+title: Tejas R. Jammihal
+description: Bioinformatics scientist at the Children's Hospital of Philadelphia building computational and machine learning methods for clinical genomics and cancer immunogenomics.
+permalink: /
 ---
+{%- assign a = site.author -%}
 
-<p>Hi, I&#39;m Tejas R. Jammihal, a research investigator at MD Anderson Cancer Center in Houston, TX. My expertise lies in the field of bioinformatics and computational biology, where I use my technical skills to understand the underlying biological mechanisms of cancer. My goal is to identify novel biomarkers and therapeutic targets that will improve patient outcomes.</p>
-<h2 id="education">Education</h2>
-<p>I hold a Master of Biotechnology degree from The Pennsylvania State University and a Master &amp; Bachelor of Technology in Biological Engineering degree from the Indian Institute of Technology Madras. I have honed my skills in both theoretical and practical aspects of biotechnology, which have been invaluable in my current role.</p>
-<h2 id="research-work-experience">Research &amp; Work Experience</h2>
-<p>At MD Anderson Cancer Center, I am designing, developing, and validating bespoke pipelines to quantify the expression of human endogenous retroviruses from transcriptomic data. I have made several exciting discoveries and developed analysis methods for cutting-edge sequencing platforms. Additionally, I have been involved in writing and presenting grants and manuscripts to advance the field.</p>
-<p>Previously, I worked as a bioinformatics analyst at Dana-Farber Cancer Institute, where I used computational methods to understand the role of clonal neoantigens and tertiary lymphoid structures as prognostic biomarkers in cancer therapy. I also worked as a computational biologist at Novartis Institute of Biomedical Research, where I identified transcriptomic signatures of physiological response to cigarette smoke in pre-clinical models of smoking.</p>
-<h2 id="teaching-mentoring-experience">Teaching &amp; Mentoring Experience</h2>
-<p>At MD Anderson Cancer Center, I am a peer mentor, where I familiarize new hires with technical and biological know-how in the field of immunogenomics and neoantigen prediction. I also have teaching experience as a teaching assistant at IITM, where I demonstrated and assisted in laboratory experiments and graded lab reports.</p>
-<p>If you would like to learn more about me or my work, please feel free to contact me using the contact info below. I would love to hear from you.</p>
+<section class="hero">
+  <div class="hero-text">
+    <p class="kicker">{{ a.title }} · {{ a.affiliation }} · {{ a.location }}</p>
+    <h1>{{ a.name }}</h1>
+    <p class="lede">Bioinformatics scientist building computational and machine learning methods for clinical genomics and cancer immunogenomics.</p>
+    <div class="actions">
+      <a class="button" href="{{ a.cv | relative_url }}">Download CV</a>
+      <div class="icon-links">
+        <a href="mailto:{{ a.email }}" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 5h20v14H2zm2 2v.5l8 5 8-5V7l-8 5-8-5zm0 2.9V17h16V9.9l-8 5z"/></svg>Email</a>
+        <a href="https://github.com/{{ a.github }}" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.5 9.5 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>GitHub</a>
+        <a href="https://www.linkedin.com/in/{{ a.linkedin }}/" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4 3.5A1.8 1.8 0 1 1 4 7a1.8 1.8 0 0 1 0-3.5zM2.5 8.5h3V21h-3zm5.5 0h2.9v1.7c.4-.8 1.5-2 3.6-2 3.8 0 4.5 2.5 4.5 5.8V21h-3v-6.2c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21H8z"/></svg>LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user={{ a.scholar }}" aria-label="Google Scholar"><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9zm0 14.5-6-3.3V17c0 2 2.7 3.5 6 3.5s6-1.5 6-3.5v-2.8z"/></svg>Scholar</a>
+        <a href="https://orcid.org/{{ a.orcid }}" aria-label="ORCID"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zM8.3 6.3a.9.9 0 1 1 0 1.8.9.9 0 0 1 0-1.8zm-.7 2.9h1.4v7.5H7.6zm3.2 0h3.1c2.9 0 4.2 2 4.2 3.8 0 2-1.5 3.7-4.2 3.7h-3.1zm1.4 1.2v5h1.6c2.1 0 2.8-1.4 2.8-2.5 0-1.3-.8-2.5-2.8-2.5z"/></svg>ORCID</a>
+      </div>
+    </div>
+  </div>
+  <img src="{{ a.headshot | relative_url }}" alt="Portrait of {{ a.name }}" width="148" height="148">
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I'm a bioinformatics scientist at the Children's Hospital of Philadelphia, where I develop and clinically translate methods for finding structural and copy-number variants in genome sequencing data to help diagnose rare pediatric disease. Before that, I spent several years in cancer immunogenomics at Dana-Farber Cancer Institute and MD Anderson Cancer Center, studying why some patients respond exceptionally well to immunotherapy. That work led to co-first-author papers in <em>Nature Cancer</em> and <em>Cancer Cell</em>. I started my career in pharma R&amp;D as a computational biology co-op at Novartis.</p>
+  <p>I like working end to end, from scoping a question with clinicians and scientists to building pipelines and models that change how they work.</p>
+  <p class="now"><strong>Currently working on:</strong> structural variant detection and machine learning-based variant triage in clinical genome sequencing.</p>
+</section>
+
+<section id="work">
+  <h2>What I work on</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>Clinical genomics for rare pediatric disease</h3>
+      <p>Methods and pipelines for structural and copy-number variant detection in clinical genome sequencing, built with clinical geneticists and genetic counselors to raise diagnostic yield.</p>
+    </article>
+    <article class="card">
+      <h3>Cancer immunogenomics</h3>
+      <p>Why some patients respond exceptionally well to immune checkpoint inhibitors: clonal neoantigens, tertiary lymphoid structures, and molecular subtypes across phase III trials.</p>
+    </article>
+    <article class="card">
+      <h3>Machine learning for genomic interpretation</h3>
+      <p>Deep learning and AutoML for triaging variant calls, with human-in-the-loop design so that no confirmed finding is dropped.</p>
+    </article>
+  </div>
+</section>
+
+<section id="selected">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <a class="more" href="{{ '/publications/' | relative_url }}">All publications →</a>
+  </div>
+  <ul class="highlights">
+    <li class="highlight">
+      <a class="pub-title" href="https://doi.org/10.1038/s43018-024-00896-w">Immunogenomic determinants of exceptional response to immune checkpoint inhibition in renal cell carcinoma</a>
+      <div class="meta"><em>Nature Cancer</em>, 2025 · Co-first author</div>
+      <p>Clonal neoantigen load and tertiary lymphoid structures mark exceptional responders where tumor mutational burden, the standard biomarker, does not.</p>
+    </li>
+    <li class="highlight">
+      <a class="pub-title" href="https://doi.org/10.1016/j.ccell.2024.03.002">Impact of renal cell carcinoma molecular subtypes on immunotherapy and targeted therapy outcomes</a>
+      <div class="meta"><em>Cancer Cell</em>, 2024 · Co-first author</div>
+      <p>Transcriptomic subtypes transferred between two phase III trials with a random-forest classifier, validating their biology across cohorts.</p>
+    </li>
+    <li class="highlight">
+      <a class="pub-title" href="https://doi.org/10.1038/s41525-026-00602-y">Multi-omic re-analysis increases diagnostic yield in individuals with Cornelia de Lange syndrome</a>
+      <div class="meta"><em>npj Genomic Medicine</em>, 2026</div>
+      <p>Integrating genome and transcriptome data solved cases that single-assay analysis had left unresolved.</p>
+    </li>
+    <li class="highlight">
+      <span class="pub-title">Best Poster, Renal Cancer category</span>
+      <div class="meta">Kidney Cancer Association · ESMO Congress 2023</div>
+      <p>For work on the determinants of exceptional response to immune checkpoint inhibition in metastatic clear cell renal cell carcinoma.</p>
+    </li>
+  </ul>
+</section>
+
+<section id="side">
+  <h2>On the side</h2>
+  <p>I use AI coding tools daily in my research work, and I like building small things with them outside of it.</p>
+  <div class="aside-card">
+    <div class="glyph" aria-hidden="true">TL</div>
+    <div>
+      <h3 style="margin-top:0">Training Log</h3>
+      <p>A local-first workout app that suggests a daily workout from the time, equipment and training history you give it, using the Claude API with a curated exercise library as fallback. Works offline, with cross-device sync.</p>
+      <p class="links"><a href="https://train.tejasrj.io">train.tejasrj.io</a><a href="https://github.com/tejas-j/workout-tracker">Source on GitHub</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2 style="margin-top:0">Get in touch</h2>
+  <p>Open to collaborations on clinical genomics, structural variation and cancer immunogenomics. Email <a href="mailto:{{ a.email }}">{{ a.email }}</a>.</p>
+</section>

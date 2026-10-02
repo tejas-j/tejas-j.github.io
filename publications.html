@@ -1,0 +1,34 @@
+---
+title: Publications
+description: Peer-reviewed articles, preprints and conference abstracts by Tejas R. Jammihal in clinical genomics and cancer immunogenomics.
+permalink: /publications/
+---
+{%- assign pubs = site.data.publications -%}
+
+<h1>Publications</h1>
+<p>Titles link to the paper. <strong>*</strong> marks co-first authorship. Also on <a href="https://scholar.google.com/citations?user={{ site.author.scholar }}">Google Scholar</a> and <a href="https://orcid.org/{{ site.author.orcid }}">ORCID</a>.</p>
+
+<h2>Peer-reviewed articles</h2>
+<ul class="pubs">
+  {%- for p in pubs.articles %}{% include pub.html p=p %}{% endfor %}
+</ul>
+
+<h2>Preprints</h2>
+<ul class="pubs">
+  {%- for p in pubs.preprints %}{% include pub.html p=p %}{% endfor %}
+</ul>
+
+<h2>Conference abstracts and presentations</h2>
+{%- for g in pubs.abstracts %}
+<h3>{{ g.group }}</h3>
+<ul class="pubs">
+  {%- for p in g.items %}{% include pub.html p=p %}{% endfor %}
+</ul>
+{%- endfor %}
+
+<h2>Other talks</h2>
+<ul class="plain">
+  {%- for t in pubs.talks %}
+  <li>{{ t.title }}. {{ t.venue }} ({{ t.year }})</li>
+  {%- endfor %}
+</ul>

@@ -1,0 +1,146 @@
+# Publications, newest first within each group.
+# `cofirst: true` adds the co-first marker. `highlight: true` shows the item on
+# the home page. Author strings are plain text; "Jammihal" is bolded by the
+# template.
+
+articles:
+  - title: Multi-omic re-analysis increases diagnostic yield in individuals with Cornelia de Lange syndrome
+    authors: Rajagopalan R, Jammihal T, Jadhav T, Kaur M, Szot K, Blair J, Raible SE, Conlin LK, Krantz I
+    venue: npj Genomic Medicine
+    year: 2026
+    doi: 10.1038/s41525-026-00602-y
+    highlight: true
+
+  - title: Novel biallelic LIG3 mutations causing lethal phenotype with immunodeficiency
+    authors: Kilich G, Jadhav T, Maurer K, Breen C, Jammihal T, et al., Rajagopalan R, Sullivan KE
+    venue: American Journal of Medical Genetics Part A
+    detail: 200(7), 1662–1667
+    year: 2026
+    doi: 10.1002/ajmg.a.70104
+
+  - title: Placental malperfusion is associated with adverse outcomes in congenital heart disease and with genetic variants in placental developmental pathways
+    authors: Josowitz R, Woyciechowski S, Jadhav T, Jammihal T, Linn RL, Rychik J, Gaynor JW, Rajagopalan R, Spinner NB
+    venue: JACC
+    detail: 86(19), 1704–1720
+    year: 2025
+    doi: 10.1016/j.jacc.2025.07.069
+
+  - title: "An unusual cause of hexokinase 1 deficiency: case report"
+    authors: Kilich G, Maurer K, Jadhav T, Jammihal T, et al., Rajagopalan R, Sullivan KE
+    venue: eJHaem
+    detail: 6(4), e70123
+    year: 2025
+    doi: 10.1002/jha2.70123
+
+  - title: Immunogenomic determinants of exceptional response to immune checkpoint inhibition in renal cell carcinoma
+    authors: Jammihal T*, Saliby RM*, Labaki C, et al., Van Allen EM, Choueiri TK, Braun DA, Shukla SA
+    venue: Nature Cancer
+    detail: 6(2), 372–384
+    year: 2025
+    doi: 10.1038/s43018-024-00896-w
+    cofirst: true
+    highlight: true
+
+  - title: Impact of renal cell carcinoma molecular subtypes on immunotherapy and targeted therapy outcomes
+    authors: Saliby RM*, Labaki C, Jammihal T*, et al., Shukla SA, Choueiri TK, Braun DA
+    venue: Cancer Cell
+    detail: 42(5), 732–735
+    year: 2024
+    doi: 10.1016/j.ccell.2024.03.002
+    cofirst: true
+    highlight: true
+
+  - title: Multidimensional molecular profiling of metastatic triple-negative breast cancer and immune checkpoint inhibitor benefit
+    authors: Barroso-Sousa R, Forman J, Collier KA, Weber ZT, Jammihal TR, Kao KZ, et al., Shukla SA, Tolaney SM
+    venue: JCO Precision Oncology
+    detail: 6, e2100413
+    year: 2022
+    doi: 10.1200/PO.21.00413
+
+preprints:
+  - title: PTPN1-related autoinflammation is a common cause of Aicardi-Goutières syndrome with reduced penetrance
+    authors: Calame DG, Wiener EK, et al., Jammihal T, et al., Lupski JR, Gibbs RA, Rajagopalan R, Vanderver A
+    venue: medRxiv
+    year: 2026
+    doi: 10.64898/2026.03.27.26345228
+
+abstracts:
+  - group: Rare disease and clinical genomics
+    items:
+      - title: "WAFL: a comprehensive, multi-omic computational workflow for rare disease diagnostics using long read sequencing"
+        authors: Rajagopalan R, Jammihal T, Kilich G, Kaur M, Szot K, Maripuri P, Conlin L, Sullivan K, Jadhav T
+        venue: ACMG Annual Clinical Genetics Meeting
+        detail: Genetics in Medicine Open 4, 104340
+        year: 2026
+        tag: Oral presentation
+      - title: PTPN1-related autoinflammation is a common cause of Aicardi-Goutières syndrome with reduced penetrance
+        authors: Wiener EK, Calame DG, et al., Jammihal T, et al., Rajagopalan R, Vanderver A
+        venue: ACMG Annual Clinical Genetics Meeting
+        detail: Genetics in Medicine Open 4, 103650
+        year: 2026
+      - title: An unusual cause of hexokinase 1 deficiency
+        authors: Kilich G, Maurer K, Jadhav T, Jammihal T, et al., Rajagopalan R, Sullivan K
+        venue: ACMG Annual Clinical Genetics Meeting
+        detail: Genetics in Medicine Open 3, 103265
+        year: 2025
+      - title: "Immunodeficiency in mitochondrial DNA depletion syndrome 20: a new phenotypic insight into LIG3 mutations"
+        authors: Kilich G, Schindewolf E, Lairson L, Maurer K, Jadhav T, Jammihal T, et al., Sullivan KE
+        venue: Clinical Immunology Society Annual Meeting
+        detail: Journal of Human Immunity 1
+        year: 2025
+        doi: 10.70962/cis2025abstract.147
+      - title: VPS45 deficiency with features of hemophagocytic lymphohistiocytosis and progressive neurologic involvement
+        authors: Kilich G, Schindewolf E, Maurer K, Jadhav T, Jammihal T, et al., Sullivan K
+        venue: Clinical Immunology Society Annual Meeting
+        detail: Journal of Human Immunity 1
+        year: 2025
+        doi: 10.70962/cis2025abstract.145
+
+  - group: Oncology and immuno-oncology
+    items:
+      - title: "Peripheral and tumor cytokines in exceptional responders to immunotherapy: results from a phase III trial"
+        authors: Saliby RM, Machaalani M, Labaki C, Jammihal T, et al., Shukla SA, Braun DA, Choueiri TK
+        venue: ESMO Congress
+        detail: Annals of Oncology 36, S1304–S1305
+        year: 2025
+      - title: Metabolic determinants of exceptional response to immune checkpoint inhibition in renal cell carcinoma
+        authors: Saliby RM, Labaki C, Jammihal T, et al., Choueiri TK, Braun DA
+        venue: ASCO Genitourinary Cancers Symposium
+        detail: Journal of Clinical Oncology 43(5_suppl), 571
+        year: 2025
+      - title: "AXL receptor tyrosine kinase expression in metastatic renal cell carcinoma: insights from the METEOR trial"
+        authors: Laimon YN, Morgan P, Jammihal T, et al., Choueiri TK, Signoretti S
+        venue: USCAP Annual Meeting
+        detail: Laboratory Investigation 105(3), 103064
+        year: 2025
+      - title: Determinants of exceptional response to immune checkpoint inhibition in metastatic clear cell renal cell carcinoma
+        authors: Saliby RM, Jammihal T, Labaki C, et al., Shukla SA, Braun DA
+        venue: ESMO Congress
+        detail: Annals of Oncology 34, S1017
+        year: 2023
+        tag: Best Poster, Renal Cancer (Kidney Cancer Association)
+      - title: "Cross-trial validation of molecular subtypes in patients with metastatic clear cell RCC: the JAVELIN Renal 101 experience"
+        authors: Saliby RM*, Jammihal T*, Labaki C, Xie W, Motzer RJ, Powles T, et al., Braun DA, Choueiri TK
+        venue: ASCO Annual Meeting
+        detail: Journal of Clinical Oncology 40(16_suppl), 4531
+        year: 2022
+        doi: 10.1200/JCO.2022.40.16_suppl.4531
+        cofirst: true
+      - title: Clonal neoantigen load and tertiary lymphoid structure formation are associated with exceptional response to immune checkpoint inhibition in clear cell renal cell carcinoma
+        authors: Jammihal TR, Saliby RM, Labaki C, McGregor B, El Zarif T, Braun D, et al., Shukla SA
+        venue: Kidney Cancer Research Summit, Philadelphia
+        year: 2022
+        tag: Selected oral presentation
+      - title: Are the IMmotion151 molecular signatures predictive of treatment outcomes in the JAVELIN Renal 101 trial?
+        authors: Saliby RM*, Jammihal TR*, Labaki C, Xie W, El Zarif T, Motzer R, et al., Braun D
+        venue: Kidney Cancer Research Summit, Philadelphia
+        year: 2022
+        cofirst: true
+
+talks:
+  - title: Exceptional responder immunogenomics
+    venue: Research Town Hall, MD Anderson Cancer Center
+    year: 2022
+  - title: Exceptional responder immunogenomics
+    venue: New England GU Oncology Young Investigator Forum
+    year: 2022
