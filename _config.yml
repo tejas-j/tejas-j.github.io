@@ -16,7 +16,7 @@ author:
   title: Bioinformatics Scientist II
   affiliation: Children's Hospital of Philadelphia
   location: Philadelphia, PA
-  headshot: /assets/img/279376_Jammihal_T_square.jpg
+  headshot: /assets/img/avatar.jpg
   cv: /assets/Tejas_Jammihal_CV.pdf
   github: tejas-j
   linkedin: tejas-jammihal
@@ -40,7 +40,7 @@ defaults:
       path: ""
     values:
       layout: default
-      image: /assets/img/279376_Jammihal_T_square.jpg
+      image: /assets/img/avatar.jpg
   # Leftover demo posts from the old theme; keep them out of the build
   - scope:
       type: posts
@@ -81,5 +81,6 @@ exclude:
   - assets/img/avatar-icon.png
   - assets/img/404-southpark.jpg
   - assets/img/hello_world.jpeg
+  - assets/img/279376_Jammihal_T_square.jpg
   - scripts/
   - vendor/

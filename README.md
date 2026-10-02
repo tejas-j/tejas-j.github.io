@@ -9,6 +9,7 @@ Personal website of Tejas R. Jammihal, built with Jekyll and hosted on GitHub Pa
 - `index.html`: home page text (about, research areas, selected work, side project).
 - `_config.yml`: name, title, affiliation, links and the CV PDF path.
 - `assets/Tejas_Jammihal_CV.pdf`: the downloadable CV. Replace the file to update it.
+- `assets/img/avatar.jpg`: the home page portrait (square; the page shows it as a circle).
 
 ## Local preview
 

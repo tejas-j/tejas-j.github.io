@@ -29,11 +29,13 @@ experience:
 
   - title: Computational Biology Co-op
     org: Novartis Institutes for BioMedical Research
+    unit: Respiratory Disease Area
     location: Cambridge, MA
     dates: Jun 2019 – Sep 2020
     bullets:
-      - Identified transcriptomic signatures of response to cigarette smoke in preclinical models and scored them in human disease data to inform indication expansion.
-      - Built an interactive Spotfire dashboard for discovery biologists and project managers.
+      - Ran differential expression and pathway enrichment analyses on time-course gene expression data from mouse models of cigarette smoke exposure, characterizing acute versus chronic response.
+      - Compared these signatures with COPD patient data to assess translational relevance and inform indication expansion for existing drugs.
+      - Built an interactive Spotfire dashboard for translational and drug discovery scientists to explore results.
 
 education:
   - degree: Master of Biotechnology
@@ -51,7 +53,7 @@ skills:
   - group: Immunogenomics
     items: HLA typing (POLYSOLVER), neoantigen prediction (NetMHCpan), TLS signatures, immune deconvolution (CIBERSORTx)
   - group: Statistics and ML
-    items: survival analysis, multivariable regression, random forest, CNN transfer learning, PyTorch, AutoGluon
+    items: survival analysis, multivariable regression, random forest, scikit-learn, CNN transfer learning, PyTorch, AutoGluon
   - group: Programming
     items: Python, R, Bash, SQL, JavaScript
   - group: Infrastructure
