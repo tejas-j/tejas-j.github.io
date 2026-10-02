@@ -41,11 +41,6 @@ defaults:
     values:
       layout: default
       image: /assets/img/avatar.jpg
-  # Leftover demo posts from the old theme; keep them out of the build
-  - scope:
-      type: posts
-    values:
-      published: false
 
 markdown: kramdown
 kramdown:
@@ -61,26 +56,4 @@ exclude:
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CHANGELOG.md
-  - screenshot.png
-  - docs/
-  - staticman.yml
-  - tags.html
-  - feed.xml
-  - beautiful-jekyll-theme.gemspec
-  - assets/css/beautifuljekyll.css
-  - assets/css/beautifuljekyll-minimal.css
-  - assets/css/bootstrap-social.css
-  - assets/css/staticman.css
-  - assets/css/pygment_highlights.css
-  - assets/js/
-  - assets/img/path.jpg
-  - assets/img/install-steps.gif
-  - assets/img/thumb.png
-  - assets/img/bgimage.png
-  - assets/img/avatar-icon.png
-  - assets/img/404-southpark.jpg
-  - assets/img/hello_world.jpeg
-  - assets/img/279376_Jammihal_T_square.jpg
-  - scripts/
   - vendor/
