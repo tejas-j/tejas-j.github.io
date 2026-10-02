@@ -2,5 +2,5 @@
 
 source "https://rubygems.org"
 
-gemspec
-
+# Matches the GitHub Pages build environment
+gem "github-pages", group: :jekyll_plugins

@@ -1,25 +1,70 @@
----
-layout: base
----
-
-<div class="intro-header"></div>
-
-<div role="main" class="{% if page.full-width %} container-fluid {% else %} container-md {% endif %}">
-  {% if page.before-content %}
-    <div class="before-content">
-      {% for file in page.before-content %}
-        {% include {{ file }} %}
-      {% endfor %}
-    </div>
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#15171a" media="(prefers-color-scheme: dark)">
+  {% seo %}
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ site.author.headshot | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ site.author.name }}",
+    "givenName": "Tejas",
+    "familyName": "Jammihal",
+    "jobTitle": "{{ site.author.title }}",
+    "description": "{{ site.description | strip_newlines | strip }}",
+    "url": "{{ site.url }}/",
+    "image": "{{ site.author.headshot | absolute_url }}",
+    "email": "mailto:{{ site.author.email }}",
+    "worksFor": { "@type": "Organization", "name": "{{ site.author.affiliation }}" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "The Pennsylvania State University" },
+      { "@type": "CollegeOrUniversity", "name": "Indian Institute of Technology Madras" }
+    ],
+    "knowsAbout": ["Bioinformatics", "Clinical genomics", "Structural variation", "Cancer immunogenomics", "Machine learning"],
+    "sameAs": [{% for l in site.social.links %}"{{ l }}"{% unless forloop.last %}, {% endunless %}{% endfor %}]
+  }
+  </script>
   {% endif %}
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Primary">
+      <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+      <ul>
+        <li><a href="{{ '/' | relative_url }}#work"{% if page.url == "/" %} aria-current="page"{% endif %}>Research</a></li>
+        <li><a href="{{ '/publications/' | relative_url }}"{% if page.url == "/publications/" %} aria-current="page"{% endif %}>Publications</a></li>
+        <li><a href="{{ '/cv/' | relative_url }}"{% if page.url == "/cv/" %} aria-current="page"{% endif %}>CV</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  {{ content }}
+  <main id="main" class="wrap">
+    {{ content }}
+  </main>
 
-  {% if page.after-content %}
-    <div class="after-content">
-      {% for file in page.after-content %}
-        {% include {{ file }} %}
-      {% endfor %}
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="links">
+        <a href="https://github.com/{{ site.author.github }}">GitHub</a>
+        <a href="https://www.linkedin.com/in/{{ site.author.linkedin }}/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user={{ site.author.scholar }}">Google Scholar</a>
+        <a href="https://orcid.org/{{ site.author.orcid }}">ORCID</a>
+        <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      </p>
+      <p class="fine">&copy; {{ site.time | date: "%Y" }} {{ site.author.name }}</p>
     </div>
-  {% endif %}
-</div>
+  </footer>
+</body>
+</html>
