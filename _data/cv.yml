@@ -1,0 +1,71 @@
+experience:
+  - title: Bioinformatics Scientist II
+    org: Children's Hospital of Philadelphia
+    unit: Division of Genomic Diagnostics, Translational Bioinformatics
+    location: Philadelphia, PA
+    dates: Jun 2023 – present
+    bullets:
+      - Develop and clinically translate methods for structural and copy-number variant detection in clinical genome sequencing, working with clinical geneticists and genetic counselors to improve diagnostic yield in rare pediatric disease.
+      - Built the bioinformatics function for CHOP's Undiagnosed Disease Program and co-designed its automated case workflow (data intake, DRAGEN processing, Emedgene prioritization) with the Arcus informatics team.
+      - Contribute to multi-omic and long-read diagnostic studies, including a genome–transcriptome re-analysis of Cornelia de Lange syndrome (npj Genomic Medicine 2026) and the WAFL long-read workflow (ACMG 2026 oral).
+
+  - title: Associate Data Scientist
+    org: MD Anderson Cancer Center
+    location: Houston, TX
+    dates: Jan 2022 – Jun 2023
+    bullets:
+      - Led the computational analysis of exceptional responders to immune checkpoint inhibitors in renal cell carcinoma, integrating exome and RNA-seq data (Nature Cancer 2025, co-first author).
+      - Designed and validated pipelines to quantify human endogenous retrovirus expression from short- and long-read RNA-seq and applied them to lymphoma cohorts.
+      - Benchmarked long-read sequencing methods for isoform characterization, structural variant detection and antigen discovery.
+
+  - title: Bioinformatics Analyst
+    org: Dana-Farber Cancer Institute
+    location: Boston, MA
+    dates: Sep 2020 – Jan 2022
+    bullets:
+      - Led the cross-trial validation of renal cell carcinoma molecular subtypes between two phase III trials using a random-forest classifier (Cancer Cell 2024, co-first author).
+      - Analyzed exome and RNA-seq data from more than 2,000 patients across clinical-trial cohorts and public datasets (TCGA, PCAWG).
+      - Containerized published pipelines and deployed them with WDL and Snakemake on GCP/FireCloud and AWS.
+
+  - title: Computational Biology Co-op
+    org: Novartis Institutes for BioMedical Research
+    unit: Respiratory Disease Area
+    location: Cambridge, MA
+    dates: Jun 2019 – Sep 2020
+    bullets:
+      - Ran differential expression and pathway enrichment analyses on time-course gene expression data from mouse models of cigarette smoke exposure, characterizing acute versus chronic response.
+      - Compared these signatures with COPD patient data to assess translational relevance and inform indication expansion for existing drugs.
+      - Built an interactive Spotfire dashboard for translational and drug discovery scientists to explore results.
+
+education:
+  - degree: Master of Biotechnology
+    org: The Pennsylvania State University
+    dates: 2018 – 2020
+  - degree: M.Tech and B.Tech (dual degree), Biological Engineering, minor in Nanotechnology
+    org: Indian Institute of Technology Madras
+    dates: 2012 – 2017
+
+skills:
+  - group: Data
+    items: WGS, WES, bulk and long-read RNA-seq, scRNA-seq, spatial transcriptomics, ATAC-seq
+  - group: Variant analysis
+    items: DRAGEN, GATK, MuTect2, Manta, CNVPytor, ABSOLUTE, FACETS, mutational signatures, Emedgene, IGV
+  - group: Immunogenomics
+    items: HLA typing (POLYSOLVER), neoantigen prediction (NetMHCpan), TLS signatures, immune deconvolution (CIBERSORTx)
+  - group: Statistics and ML
+    items: survival analysis, multivariable regression, random forest, scikit-learn, CNN transfer learning, PyTorch, AutoGluon
+  - group: Programming
+    items: Python, R, Bash, SQL, JavaScript
+  - group: Infrastructure
+    items: WDL, Snakemake, Nextflow, Docker, Singularity, AWS, GCP/Terra, SLURM, LSF, Git
+  - group: AI-assisted development
+    items: Claude Code and the Claude API, with generated code reviewed and validated before use
+
+honors:
+  - Best Poster, Renal Cancer category, Kidney Cancer Association, ESMO 2023
+  - Oral presentation, ACMG Annual Clinical Genetics Meeting 2026
+  - Selected oral presentation, Kidney Cancer Research Summit 2022
+
+service:
+  - "Invited peer reviewer: Nature Biotechnology, JCO Clinical Cancer Informatics, Scientific Reports, Therapeutic Advances in Medical Oncology"
+  - Peer mentor for new hires in immunogenomics, MD Anderson Cancer Center (2022 – 2023)

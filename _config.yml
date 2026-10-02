@@ -1,0 +1,59 @@
+# Site settings
+title: Tejas R. Jammihal
+tagline: Bioinformatics scientist
+description: >-
+  Bioinformatics scientist at the Children's Hospital of Philadelphia building
+  computational and machine learning methods for clinical genomics and cancer
+  immunogenomics. Co-first author in Nature Cancer and Cancer Cell.
+url: "https://tejasrj.io"
+baseurl: ""
+lang: en
+timezone: America/New_York
+
+author:
+  name: Tejas R. Jammihal
+  email: hello@tejasrj.io
+  title: Bioinformatics Scientist II
+  affiliation: Children's Hospital of Philadelphia
+  location: Philadelphia, PA
+  headshot: /assets/img/avatar.jpg
+  cv: /assets/Tejas_Jammihal_CV.pdf
+  github: tejas-j
+  linkedin: tejas-jammihal
+  scholar: izr9eV4AAAAJ
+  orcid: 0000-0003-4614-1266
+
+# Social profile links used in SEO and JSON-LD
+social:
+  name: Tejas R. Jammihal
+  links:
+    - https://github.com/tejas-j
+    - https://www.linkedin.com/in/tejas-jammihal/
+    - https://scholar.google.com/citations?user=izr9eV4AAAAJ
+    - https://orcid.org/0000-0003-4614-1266
+
+twitter:
+  card: summary
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/img/avatar.jpg
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor/
