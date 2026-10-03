@@ -37,7 +37,7 @@ twitter:
 
 # Optional, privacy-friendly visitor counts (no cookies). Set to your GoatCounter
 # site code (the part before .goatcounter.com) to enable; leave empty to disable.
-goatcounter: ""
+goatcounter: "tejasrj"
 
 defaults:
   - scope:
