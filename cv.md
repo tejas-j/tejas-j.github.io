@@ -2,6 +2,7 @@
 title: CV
 description: Curriculum vitae of Tejas R. Jammihal, bioinformatics scientist at the Children's Hospital of Philadelphia.
 permalink: /cv/
+last_modified_at: 2026-10-03
 ---
 {%- assign cv = site.data.cv -%}
 
