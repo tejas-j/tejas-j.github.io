@@ -35,6 +35,10 @@ social:
 twitter:
   card: summary
 
+# Optional, privacy-friendly visitor counts (no cookies). Set to your GoatCounter
+# site code (the part before .goatcounter.com) to enable; leave empty to disable.
+goatcounter: ""
+
 defaults:
   - scope:
       path: ""

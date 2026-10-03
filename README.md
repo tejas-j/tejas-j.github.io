@@ -10,6 +10,8 @@ Personal website of Tejas R. Jammihal, built with Jekyll and hosted on GitHub Pa
 - `_config.yml`: name, title, affiliation, links and the CV PDF path.
 - `assets/Tejas_Jammihal_CV.pdf`: the downloadable CV. Replace the file to update it.
 - `assets/img/avatar.jpg`: the home page portrait (square; the page shows it as a circle).
+- `llms.txt`: plain-text summary for AI assistants; it pulls publications from the data file, so only the prose needs updating.
+- When you change a page, bump its `last_modified_at` front matter so the sitemap reflects it.
 
 ## Local preview
 

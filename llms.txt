@@ -1,0 +1,55 @@
+---
+layout: none
+permalink: /llms.txt
+sitemap: false
+---
+{%- assign a = site.author -%}
+{%- assign pubs = site.data.publications -%}
+# {{ a.name }}
+
+> Bioinformatics scientist at the Children's Hospital of Philadelphia building computational and machine learning methods for clinical genomics and cancer immunogenomics. Co-first author of papers in Nature Cancer (2025) and Cancer Cell (2024).
+
+This file summarizes {{ site.url }} for AI assistants. The pages below are plain HTML and may be read directly.
+
+## About
+
+{{ a.name }} (publishes as Jammihal T or Jammihal TR) is a {{ a.title }} in the Division of Genomic Diagnostics at the {{ a.affiliation }}, {{ a.location }}, developing and clinically translating methods for finding structural and copy-number variants in genome sequencing data to help diagnose rare pediatric disease. Current work: structural variant detection and machine learning-based variant triage in clinical genome sequencing.
+
+Earlier roles: cancer immunogenomics at Dana-Farber Cancer Institute (2020–2022) and MD Anderson Cancer Center (2022–2023), studying why some patients respond exceptionally well to immunotherapy; computational biology co-op at Novartis Institutes for BioMedical Research (2019–2020).
+
+Education: Master of Biotechnology, The Pennsylvania State University (2020); M.Tech and B.Tech in Biological Engineering, Indian Institute of Technology Madras (2017).
+
+## Research areas
+
+- Clinical genomics for rare pediatric disease: structural and copy-number variant detection in clinical genome sequencing
+- Cancer immunogenomics: clonal neoantigens, tertiary lymphoid structures and molecular subtypes as biomarkers of immunotherapy response
+- Machine learning for genomic interpretation: deep learning and AutoML for human-in-the-loop variant triage
+
+## Selected publications
+
+{% for p in pubs.articles -%}
+- {{ p.authors }}. {{ p.title }}. {{ p.venue }}{% if p.detail %} {{ p.detail }}{% endif %} ({{ p.year }}). https://doi.org/{{ p.doi }}{% if p.cofirst %} [co-first author]{% endif %}
+{% endfor %}
+Full list with preprints and conference abstracts: {{ site.url }}/publications/
+
+## Honors
+
+- Best Poster, Renal Cancer category, Kidney Cancer Association, ESMO 2023
+- Oral presentations at ACMG 2026 and the Kidney Cancer Research Summit 2022
+- Invited peer reviewer for Nature Biotechnology, JCO Clinical Cancer Informatics, Scientific Reports and Therapeutic Advances in Medical Oncology
+
+## Pages
+
+- [Home]({{ site.url }}/): about, research areas, selected work, contact
+- [Publications]({{ site.url }}/publications/): peer-reviewed articles, preprints, abstracts and talks
+- [CV]({{ site.url }}/cv/): experience, education, skills, honors and service
+- [CV (PDF)]({{ site.url }}{{ a.cv }})
+
+## Links
+
+- Email: {{ a.email }}
+- GitHub: https://github.com/{{ a.github }}
+- LinkedIn: https://www.linkedin.com/in/{{ a.linkedin }}/
+- Google Scholar: https://scholar.google.com/citations?user={{ a.scholar }}
+- ORCID: https://orcid.org/{{ a.orcid }}
+- Side project: Training Log, https://train.tejasrj.io

@@ -1,9 +1,34 @@
 ---
 title: Publications
-description: Peer-reviewed articles, preprints and conference abstracts by Tejas R. Jammihal in clinical genomics and cancer immunogenomics.
+description: Peer-reviewed articles, preprints and conference abstracts by Tejas R. Jammihal in clinical genomics and cancer immunogenomics, including co-first-author papers in Nature Cancer and Cancer Cell.
 permalink: /publications/
+last_modified_at: 2026-10-03
 ---
 {%- assign pubs = site.data.publications -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Publications by {{ site.author.name }}",
+  "itemListElement": [
+  {%- for p in pubs.articles %}
+    {
+      "@type": "ListItem",
+      "position": {{ forloop.index }},
+      "item": {
+        "@type": "ScholarlyArticle",
+        "headline": {{ p.title | jsonify }},
+        "author": {{ p.authors | jsonify }},
+        "datePublished": "{{ p.year }}",
+        "isPartOf": { "@type": "Periodical", "name": {{ p.venue | jsonify }} },
+        "sameAs": "https://doi.org/{{ p.doi }}",
+        "url": "https://doi.org/{{ p.doi }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+  {%- endfor %}
+  ]
+}
+</script>
 
 <h1>Publications</h1>
 <p>Titles link to the paper. <strong>*</strong> marks co-first authorship. Also on <a href="https://scholar.google.com/citations?user={{ site.author.scholar }}">Google Scholar</a> and <a href="https://orcid.org/{{ site.author.orcid }}">ORCID</a>.</p>
