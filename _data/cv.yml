@@ -59,7 +59,7 @@ skills:
   - group: Infrastructure
     items: WDL, Snakemake, Nextflow, Docker, Singularity, AWS, GCP/Terra, SLURM, LSF, Git
   - group: AI-assisted development
-    items: Claude Code and the Claude API, with generated code reviewed and validated before use
+    items: Claude Code for scaffolding, refactoring, tests and docs, with generated code reviewed and validated before use; LLM APIs (Gemini) behind a rate-limited proxy in the Training Log app
 
 honors:
   - Best Poster, Renal Cancer category, Kidney Cancer Association, ESMO 2023

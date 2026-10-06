@@ -1,0 +1,130 @@
+---
+title: Training Log
+description: Training Log is a local-first workout app that plans today's workout for the time and equipment you have. How it is built, from the offline-first front end to the LLM planner behind a rate-limited proxy.
+permalink: /training-log/
+last_modified_at: 2026-10-06
+---
+
+<h1>Training Log</h1>
+<p class="lede-sm">A side project: a mobile-first workout planner and tracker built around one idea, <strong>zero decisions to start</strong>. Open the app and today's workout is already planned for the time you have and the equipment you own. Tap Start, follow the sets and the rest timer, and watch your streak and lifts go up.</p>
+<p class="links-row">
+  <a class="button" href="https://train.tejasrj.io">Open the app</a>
+  <a href="https://github.com/tejas-j/workout-tracker">Source on GitHub</a>
+  <a href="https://github.com/tejas-j/workout-tracker/blob/main/docs/architecture.md">Architecture notes</a>
+</p>
+<p class="pub-note">Works without signing in. Built with AI coding tools as a way to learn by shipping something I use every day.</p>
+
+<div class="shots" aria-label="App screenshots">
+  <figure><img src="{{ '/assets/img/training-log/today.webp' | relative_url }}" alt="Today screen with a ready-to-start upper body workout" width="390" height="844" loading="lazy"><figcaption>Today: a plan on open</figcaption></figure>
+  <figure><img src="{{ '/assets/img/training-log/workout.webp' | relative_url }}" alt="Live workout screen showing one set with reps and weight" width="390" height="844" loading="lazy"><figcaption>Live workout, one set at a time</figcaption></figure>
+  <figure><img src="{{ '/assets/img/training-log/progress.webp' | relative_url }}" alt="Progress screen in the Night theme" width="390" height="844" loading="lazy"><figcaption>Progress, Night theme</figcaption></figure>
+  <figure><img src="{{ '/assets/img/training-log/history.webp' | relative_url }}" alt="History calendar and recent sessions" width="390" height="844" loading="lazy"><figcaption>History and PR calendar</figcaption></figure>
+</div>
+
+<h2>What it does</h2>
+<ul class="plain">
+  <li><strong>A workout ready on open.</strong> Today's plan is built automatically, rotating upper body, lower body and full body. Pick any of 14 focus areas, choose 20, 30 or 45 minutes, or shuffle for different exercises.</li>
+  <li><strong>AI planning.</strong> An LLM personalizes the plan from recent workouts and activities and explains why in one line. If it's unavailable, a curated library of about 170 exercises plans the workout instead.</li>
+  <li><strong>Live workout mode.</strong> Reps and weight steppers, "last time" numbers, an automatic rest timer with chime and vibration, exercise swaps, and the screen kept awake. A reload or a locked phone resumes where you left off.</li>
+  <li><strong>Progress you can see.</strong> A weekly goal of active days, a streak of weeks that hit it, weekly volume, lifts going up, and a 30-day calendar with PR tags. Walks, runs and sports count too.</li>
+  <li><strong>Local-first with cloud sync.</strong> Works offline and signed out. Sign in with Google to sync across devices, or continue as a guest and link Google later.</li>
+  <li><strong>Installable PWA</strong> on iOS and Android, with Day and Night themes and JSON, CSV or text export.</li>
+</ul>
+
+<h2>How it's built</h2>
+<p>Everything runs in the browser. Two small cloud services add sync and AI planning, and the app keeps working without either of them.</p>
+
+<figure class="arch">
+  <svg viewBox="0 0 760 470" role="img" aria-labelledby="arch-title arch-desc" xmlns="http://www.w3.org/2000/svg">
+    <title id="arch-title">Training Log architecture</title>
+    <desc id="arch-desc">The browser holds the UI, app logic, exercise library, stats, localStorage as the source of truth, and a service worker. Optionally it syncs to Firebase Auth and Firestore, and requests AI plans from a Cloudflare Worker, which verifies the Firebase token, enforces daily limits, and calls the Gemini API.</desc>
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="currentColor"/>
+      </marker>
+    </defs>
+
+    <!-- Browser -->
+    <rect class="box box-main" x="20" y="20" width="720" height="200" rx="12"/>
+    <text class="label-head" x="40" y="48">Phone / browser</text>
+
+    <g class="row">
+      <text class="mono" x="40" y="82">index.html · styles.css</text>
+      <text class="label" x="280" y="82">UI: Today, Progress, History, Settings, live workout</text>
+    </g>
+    <g class="row">
+      <text class="mono" x="40" y="108">app.js</text>
+      <text class="label" x="280" y="108">State, today's plan, live session, sync glue</text>
+    </g>
+    <g class="row">
+      <text class="mono" x="40" y="134">exercises.js · stats.js</text>
+      <text class="label" x="280" y="134">Exercise library and planner · stats as pure functions</text>
+    </g>
+    <g class="row row-strong">
+      <text class="mono" x="40" y="160">localStorage</text>
+      <text class="label" x="280" y="160">Source of truth for all data on the device</text>
+    </g>
+    <g class="row">
+      <text class="mono" x="40" y="186">sw.js</text>
+      <text class="label" x="280" y="186">Service worker caches the app shell for offline use</text>
+    </g>
+
+    <!-- Arrows down -->
+    <line class="edge" x1="200" y1="220" x2="200" y2="286" marker-end="url(#arrow)"/>
+    <text class="edge-label" x="212" y="258">sync (optional)</text>
+    <line class="edge" x1="560" y1="220" x2="560" y2="286" marker-end="url(#arrow)"/>
+    <text class="edge-label" x="572" y="258">AI plan (optional)</text>
+
+    <!-- Firebase -->
+    <rect class="box" x="60" y="290" width="280" height="90" rx="10"/>
+    <text class="label-head" x="80" y="316">Firebase</text>
+    <text class="label" x="80" y="340">Auth: Google sign-in or guest</text>
+    <text class="label" x="80" y="362">Firestore: one collection per user</text>
+
+    <!-- Worker -->
+    <rect class="box" x="420" y="290" width="280" height="90" rx="10"/>
+    <text class="label-head" x="440" y="316">Cloudflare Worker</text>
+    <text class="label" x="440" y="340">Verifies the Firebase ID token</text>
+    <text class="label" x="440" y="362">Tiered daily limits in a Durable Object</text>
+
+    <!-- Worker -> Firebase (token verification) -->
+    <line class="edge" x1="420" y1="335" x2="344" y2="335" marker-end="url(#arrow)"/>
+    <text class="edge-label" x="356" y="326">keys</text>
+
+    <!-- Worker -> Gemini -->
+    <line class="edge" x1="560" y1="380" x2="560" y2="416" marker-end="url(#arrow)"/>
+    <rect class="box" x="440" y="420" width="240" height="40" rx="10"/>
+    <text class="label-head" x="460" y="446">Google Gemini API</text>
+  </svg>
+  <figcaption>Hosted on GitHub Pages at train.tejasrj.io. Every change is written to localStorage first, then mirrored to the cloud in the background. The LLM key never reaches the client; it lives only in the Worker's secret store.</figcaption>
+</figure>
+
+<h3>Principles</h3>
+<ul class="plain">
+  <li><strong>Local first.</strong> The UI never waits on the network. Changes land in localStorage, then sync when a connection is there.</li>
+  <li><strong>No build step.</strong> Plain HTML, CSS and JavaScript served as static files from GitHub Pages.</li>
+  <li><strong>Graceful fallback.</strong> No sign-in means data stays on the device. No AI means the built-in library plans the workout.</li>
+  <li><strong>Secrets stay server-side.</strong> The Gemini key lives only in the Worker. The Firebase web config is public by design; Firestore rules enforce access.</li>
+</ul>
+
+<h3>Stack</h3>
+<table class="stack">
+  <tr><th>Layer</th><th>Implementation</th></tr>
+  <tr><td>UI</td><td>Single-page vanilla HTML, CSS and JavaScript; no framework</td></tr>
+  <tr><td>Planning</td><td>Greedy time-budget packer over the exercise library, rotating muscle groups and ranking by how recently each exercise was done</td></tr>
+  <tr><td>Stats</td><td>Pure functions for weeks, goal history, streak, volume, lift trends and PRs, unit tested in Node</td></tr>
+  <tr><td>Live workout</td><td>Session saved on every change; rest timer derived from a timestamp; Web Audio, Vibration and Screen Wake Lock APIs</td></tr>
+  <tr><td>Storage</td><td>localStorage with versioned keys is the source of truth on each device</td></tr>
+  <tr><td>Sync</td><td>Firebase Authentication (Google and anonymous) and Cloud Firestore; workouts merge by id, deletions propagate, settings are last-write-wins</td></tr>
+  <tr><td>Offline</td><td>Service worker with stale-while-revalidate caching; installable PWA</td></tr>
+  <tr><td>AI</td><td>Gemini behind a Cloudflare Worker that checks origin and request size, verifies Firebase ID tokens, and enforces per-tier daily limits in a Durable Object</td></tr>
+  <tr><td>Tests</td><td>Node unit tests for stats; Worker tests for auth, tiers, limits, day rollover and API errors</td></tr>
+</table>
+
+<h3>How a plan is made</h3>
+<ol class="plain">
+  <li>On open, a plan is built locally from the library for today's focus. If AI is on, a better plan is requested in the background.</li>
+  <li>The app sends the system prompt, the user prompt (minutes, focus, equipment, the last 10 entries) and a JSON schema to the Worker. Signed-in users attach their Firebase ID token.</li>
+  <li>The Worker verifies the token, picks a tier (owner, member or public) and checks that tier's daily limit.</li>
+  <li>The Worker calls Gemini and returns the JSON plan. The app validates it, prefers the user's logged weights, and swaps it in.</li>
+</ol>
