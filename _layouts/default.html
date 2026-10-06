@@ -46,9 +46,10 @@
     <nav class="wrap nav" aria-label="Primary">
       <a class="brand" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
       <ul>
-        <li><a href="{{ '/' | relative_url }}#work"{% if page.url == "/" %} aria-current="page"{% endif %}>Research</a></li>
+        <li class="nav-research"><a href="{{ '/' | relative_url }}#work"{% if page.url == "/" %} aria-current="page"{% endif %}>Research</a></li>
         <li><a href="{{ '/publications/' | relative_url }}"{% if page.url == "/publications/" %} aria-current="page"{% endif %}>Publications</a></li>
         <li><a href="{{ '/cv/' | relative_url }}"{% if page.url == "/cv/" %} aria-current="page"{% endif %}>CV</a></li>
+        <li><a href="{{ '/training-log/' | relative_url }}"{% if page.url == "/training-log/" %} aria-current="page"{% endif %}>Training Log</a></li>
       </ul>
     </nav>
   </header>
