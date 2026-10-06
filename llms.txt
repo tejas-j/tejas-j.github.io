@@ -30,7 +30,11 @@ Education: Master of Biotechnology, The Pennsylvania State University (2020); M.
 {% for p in pubs.articles -%}
 - {{ p.authors }}. {{ p.title }}. {{ p.venue }}{% if p.detail %} {{ p.detail }}{% endif %} ({{ p.year }}). https://doi.org/{{ p.doi }}{% if p.cofirst %} [co-first author]{% endif %}
 {% endfor %}
-Full list with preprints and conference abstracts: {{ site.url }}/publications/
+Preprints:
+{% for p in pubs.preprints -%}
+- {{ p.authors }}. {{ p.title }}. {{ p.venue }} ({{ p.year }}). https://doi.org/{{ p.doi }}{% if p.tag %} [{{ p.tag }}]{% endif %}
+{% endfor %}
+Full list with conference abstracts: {{ site.url }}/publications/
 
 ## Honors
 
@@ -44,6 +48,7 @@ Full list with preprints and conference abstracts: {{ site.url }}/publications/
 - [Publications]({{ site.url }}/publications/): peer-reviewed articles, preprints, abstracts and talks
 - [CV]({{ site.url }}/cv/): experience, education, skills, honors and service
 - [CV (PDF)]({{ site.url }}{{ a.cv }})
+- [Training Log]({{ site.url }}/training-log/): side project, a local-first workout app with LLM planning; how it is built
 
 ## Links
 
@@ -52,4 +57,4 @@ Full list with preprints and conference abstracts: {{ site.url }}/publications/
 - LinkedIn: https://www.linkedin.com/in/{{ a.linkedin }}/
 - Google Scholar: https://scholar.google.com/citations?user={{ a.scholar }}
 - ORCID: https://orcid.org/{{ a.orcid }}
-- Side project: Training Log, https://train.tejasrj.io
+- Side project: Training Log, https://train.tejasrj.io (source: https://github.com/tejas-j/workout-tracker)

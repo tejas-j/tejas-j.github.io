@@ -58,6 +58,14 @@ articles:
     doi: 10.1200/PO.21.00413
 
 preprints:
+  - title: "Overcoming a diagnostic blindspot: identifying balanced translocations in Mendelian rare disease cohorts"
+    authors: Jammihal TR, Szot K, Kaur M, Esteves C, Kobren SN, Undiagnosed Diseases Network, Conlin L, Rajagopalan R
+    venue: medRxiv
+    year: 2026
+    doi: 10.64898/2026.09.30.26363717
+    tag: First author
+    highlight: true
+
   - title: PTPN1-related autoinflammation is a common cause of Aicardi-Goutières syndrome with reduced penetrance
     authors: Calame DG, Wiener EK, et al., Jammihal T, et al., Lupski JR, Gibbs RA, Rajagopalan R, Vanderver A
     venue: medRxiv
